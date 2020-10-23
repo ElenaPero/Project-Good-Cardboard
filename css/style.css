@@ -1,0 +1,360 @@
+body{
+    color: #373737;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, ul, li{
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.title-site-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #313131;
+}
+
+.header{
+    background-color: #ffffff;
+    padding: 30px 0 15px 30px;
+    display: flex;
+    align-items: baseline;
+    margin-top: 30px;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;   
+}
+
+
+.header-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.header-text-phones{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-phone{
+    font-family: 'Roboto';
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0 15px 0 15px;
+    text-transform: uppercase;
+}
+
+.header-border{
+    color: #373737;
+    opacity: 0.2;
+}
+
+.header-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    padding: 10px 25px 10px 15px;
+    background-color: #ff9d00;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto'; 
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none; 
+}
+
+.header-button:hover{
+    background-color: #f8ba34;
+}
+
+.header-icone-phone{
+    display: inline-block;
+    max-width: 20px;
+    max-height: 20px;    
+}
+
+.header-button-text{
+    margin-left: 10px;
+}
+
+
+
+
+/* начало ревью */
+
+#review{
+    background-color: #f4f4f4;
+}
+
+/* конец */
+
+.footer{
+    background-color: #1b1b1b;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text{
+    opacity: 0.5;
+    font-family: 'Roboto';
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .header-logo-mobile{
+        display: none;
+    }  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .header-logo-mobile{
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px){
+
+    .header{
+        padding: 25px 0 15px 25px;
+        margin-top: 5px
+    }
+
+    .header-logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 75px;
+        margin-left: 40px;
+    }
+    
+    .header-text-phones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-border{
+        display: none;
+    }
+
+    .header-phone{
+        margin: 5px 15px 5px 15px;
+    }
+
+    .header-button{
+        margin-bottom: 5px;
+    }
+
+    /*блок мейн  */
+
+    .col-5{
+        display: none;
+    }
+
+    .main-text{
+        max-width: 100%;
+    }
+
+    .main-text-subtitle{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 425px){
+
+    .header{
+        padding: 25px 0 15px 25px;
+        margin-top: 5px
+    }
+
+    .header-logo{
+        display: none;       
+    }
+
+    .header-logo-mobile {
+        margin-right: 100px;
+        margin-left: 50px;
+    }
+
+    .header-border{
+        display: none;
+    }
+
+    .header-text{
+        margin-bottom: 7px;
+    }
+    
+    .header-text-phones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-phone{
+        font-size: 15px;
+        margin: 0 15px 0 0;
+    }
+
+    .bold-phone{
+        font-weight: bolder;
+        font-size: 16px;
+    }
+
+    .header-button{
+        padding: 6px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .header-icone-phone{
+        margin-right: 0px;    
+}
+
+    .header-button-text{
+        display: none;
+    }         
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+
+    .header {
+        padding: 25px 0 15px 25px;
+        margin-top: 5px
+    }
+ 
+    .header-logo{
+        display: none;
+    }
+
+    .header-border{
+        display: none;
+    }
+
+    .header-logo-mobile {
+        margin-right: 75px;
+        margin-left: 30px;
+    }
+    
+    .header-text-phones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-phone{
+        font-size: 15px;
+    }
+
+    .bold-phone{
+        font-weight: bolder;
+        font-size: 16px;
+    }
+
+    .header-button{
+        padding: 6px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .header-icone-phone{
+        margin-right: 0px;    
+}
+
+    .header-button-text{
+        display: none;
+    }
+    
+}
+    
+
+
+
+    
+
+@media screen and (max-width: 320px){
+
+    .title-site-section{
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 25px 0 15px 25px;
+        margin-top: 5px;
+    }
+
+    .header-logo{
+        display: none;
+    }
+
+    .header-logo-mobile {
+        margin-right: 20px;
+        margin-left: 36px;
+    }
+
+    .header-text-phones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-phone{
+        font-size: 15px;
+    }
+
+    .header-border{
+        display: none;
+    }
+
+    .bold-phone{
+        font-weight: bolder;
+        font-size: 16px;
+    }
+
+    .header-button{
+        padding: 6px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .header-icone-phone{
+        margin-right: 0px;    
+}
+
+    .header-button-text{
+        display: none;
+    }
+      
+}
+

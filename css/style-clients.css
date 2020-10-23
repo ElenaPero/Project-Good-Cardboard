@@ -1,0 +1,129 @@
+
+#clients{
+    display: flex;
+    justify-content: center;
+    background-color:#ffffff;
+    padding: 20px 0;
+}
+
+.clients-title{
+    font-family: 'Roboto';
+    font-size: 27px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #313131;
+    display: flex;    
+}
+
+.clients-items{
+    display: flex;
+    flex-direction: row;
+}
+
+.first-client,.second-client,.third-client{
+   display: flex;
+   flex-direction: colomn;
+   justify-content: center;   
+}
+
+.client-line{
+    display: flex;
+    flex-direction: row;
+}
+
+.client-card{
+    border: 1px grey solid;
+    margin: 0 15px 30px 15px;
+    padding: 5px;
+    width: 212px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grayscale {
+    filter: grayscale(1);
+    transition: 0.2s;
+   }
+
+   .grayscale:hover {
+    filter: grayscale(0);
+   }
+
+   
+@media screen and (min-width: 375px) and (max-width: 425px){
+
+    .first-client,.second-client,.third-client{
+        display: flex;
+        flex-wrap: wrap; 
+     }
+
+    .clients-items{
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+    .client-card{
+        width: 142px;
+        margin: 0 10px 30px 15px;
+        border: 1px solid rgba(0,0,0,0.09);
+    }
+
+    .grayscale {
+        filter: none;
+    }
+
+   
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+
+    .first-client,.second-client,.third-client{
+        display: flex;
+        flex-wrap: wrap; 
+     }
+
+    .clients-items{
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+    .client-card{
+        width: 142px;
+        margin: 0 10px 30px 15px;
+        border: 1px solid rgba(0,0,0,0.09);
+    }
+
+    .grayscale {
+        filter: none;
+    }
+
+  
+}
+
+
+@media screen and (max-width: 320px){
+
+    .first-client,.second-client,.third-client{
+        display: flex;
+        flex-wrap: wrap; 
+     }
+
+    .clients-items{
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+    .client-card{
+        width: 142px;
+        margin: 0 2px 30px 15px;
+        border: 1px solid rgba(0,0,0,0.09);
+    }
+     
+    .grayscale {
+        filter: none;
+    }
+}

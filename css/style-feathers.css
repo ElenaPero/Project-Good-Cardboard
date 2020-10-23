@@ -1,0 +1,251 @@
+
+#feathers{
+    background-color: #f4f4f4;
+    padding-top: 70px;
+}
+
+.first, .second, .third{
+    display: flex;
+    flex-direction: row;
+}
+
+.feathers-card{
+    display: flex;
+    flex-direction: column;
+    min-width: 294px;
+    min-height: 79px;
+    text-align: center;
+    margin: 0 15px 50px 15px;
+    padding: 0;
+}
+
+.feathers-title{
+    font-family: 'Roboto';
+    font-size: 36px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f39003;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feathers-title-small{
+    text-transform: none;
+}
+
+.feathers-text{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+    color: #373737;
+    text-align: center;
+}
+
+.feathers-card-white{
+    background-color: white;
+    width: 305px;
+    height: 132px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 15px 30px 15px;
+    padding-top: 25px;   
+}
+
+.img-feathers{
+    display: flex;
+    align-items: center;
+    min-width: 56px;
+    min-height: 56px;
+    max-width: 100%;
+    margin: 0 8px 15px 11px;
+   }
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.feathers-card-title{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #373737;
+    margin-bottom: 5px;    
+}
+
+.feathers-card-text{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    color: #373737;
+}
+
+/* конец блока фичерс */
+
+/* начало долгого славного адаптива */
+
+@media screen and(min-width: 1440px){
+
+    .feathers-card-white{
+
+        padding-top: 32px;
+
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+
+    #feathers{
+        padding: 50px 0px 0px 0px;
+    }
+
+    .first{
+        display: flex;
+        align-items: baseline;
+    }
+
+    .white-card-feathers{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .feathers-card-white{
+       height: 145px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    #feathers{
+        padding: 50px 0px 0px 0px;
+    }
+
+    .first{
+        display: flex;
+        align-items: baseline;
+    }
+
+    .white-card-feathers{
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .feathers-card-white{
+        width: 310px;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 768px){
+
+    
+    #feathers{
+        padding: 50px 20px 0px 20px;
+    }
+        
+    .first{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    } 
+
+    .second,.third{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+.feathers-card{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 425px){
+
+    
+    #feathers{
+        padding: 50px 40px 0px 40px;
+    }
+
+    .first,.second,.third{
+        display: flex;
+        flex-direction: colomn;
+    }
+
+    .feathers-card{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+    .feathers-card-white{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+
+    
+    #feathers{
+        padding: 50px 0;
+    }
+
+    .first,.second,.third{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feathers-card{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+    .feathers-card-white{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 320px){
+
+    
+    #feathers{
+        padding-top: 50px;
+    }
+
+    .container{
+        padding-left: 11px;
+    }
+
+    .first,.second,.third{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feathers-card{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+    .feathers-card-white{
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 297px;
+    }
+
+}

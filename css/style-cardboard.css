@@ -1,0 +1,272 @@
+
+#cardboard{
+    padding: 60px 10px;
+}
+
+.cardboard-img{
+    width: 100%;
+    width: 410px;
+    height: 281px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cardboard-cart{
+    width: 100%;
+    width: 415px;
+    height: 380px;
+    /* margin-bottom: 15px;
+    margin-left: 50px; */
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.vave{
+    margin-top: 5px;
+}
+
+.cardboard-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardboard-subtitle{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #313131;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;    
+    margin-top: 10px;
+    height: 25px;
+
+}
+
+.cardboard-line-first, .cardboard-line-second{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-line{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-details{
+    opacity: 0.5;
+    border: 1px solid #373737;
+    outline: none;
+    cursor: pointer;
+    margin-right: 12px;
+    padding: 13px 21px 13px 21px;
+    border-radius: 5px;
+   }
+
+.button-details:hover{
+    background-color: #ffffff;    
+}
+
+.button-calculation{    
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #ff9d00;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 22px 10px 22px;
+}
+
+.button-calculation:hover{
+    background-color: #f8ba34;
+}
+
+
+/* Адаптив. Начало */
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    #cardboard{
+        padding: 60px 30px 0 30px;
+    
+   }
+
+}
+
+    .cardboard-cart{
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    
+@media screen and (min-width: 425px) and (max-width: 768px){
+
+    
+    .cardboard-cart{
+        width: 310px;
+        height: 400px;
+        margin-bottom: 50px;
+        margin-left: 15px;
+    }
+
+    
+    .cardboard-img{
+        width: 100%;
+        height: 255px;
+    }
+
+    .cardboard-subtitle{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 425px){
+
+     #cardboard{
+        padding: 60px 5px;
+    }
+
+    .vave{
+        display: none;
+    }
+
+    .cardboard-img{
+        width: 100%;
+        width: 285px;
+        height: 250px;
+    }
+
+
+    .cardboard-cart{
+        width: 310px;
+    }
+
+    .cardboard-subtitle{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .cardboard-line-first, .cardboard-line-second{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;        
+    }
+
+    .buttons-line {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+
+    #cardboard{
+        padding: 60px 5px;
+    }
+
+    .vave{
+        display: none;
+    }
+
+    .cardboard-img{
+        width: 100%;
+        width: 285px;
+        height: 250px;
+    }
+
+
+    .cardboard-cart{
+        width: 310px;
+    }
+
+    .cardboard-subtitle{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .cardboard-line-first, .cardboard-line-second{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;        
+    }
+
+    .buttons-line {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+@media screen and (max-width: 320px){
+
+    #cardboard{
+        padding: 60px 0px;
+    }
+
+    .vave{
+        display: none;
+    }
+
+    .container{
+        margin: 0 auto;
+    }
+
+    .cardboard-img{
+        width: 100%;
+        width: 280px;
+        height: 250px;
+    }
+
+
+    .cardboard-cart{
+        width: 100%;
+        width: 290px;
+    }
+
+    .cardboard-subtitle{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .cardboard-line-first, .cardboard-line-second{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;        
+    }
+
+    .buttons-line {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+
+    .button-details{        
+        
+        display: flex;
+        flex-direction: row;        
+       }
+    
+}
